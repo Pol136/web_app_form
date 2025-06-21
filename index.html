@@ -109,6 +109,7 @@
       };
 
       if (window.Telegram && window.Telegram.WebApp) {
+        console.log("Отправка данных в Telegram:", JSON.stringify(order));
         Telegram.WebApp.sendData(JSON.stringify(order));
       }
 
